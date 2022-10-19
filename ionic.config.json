@@ -1,0 +1,7 @@
+{
+  "name": "Ikan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

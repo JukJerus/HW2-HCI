@@ -1,17 +1,13 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
-      <ion-toolbar>
-        <ion-title>Kolam</ion-title>
-      </ion-toolbar>
-    </ion-header>
-
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Kolam</ion-title>
-        </ion-toolbar>
-      </ion-header>
+      <div class="navbar" style="margin-inline: 30px">
+        <h1>Kolam</h1>
+        <div>
+          <img src="/assets/icon/Sorting.svg" alt="" />
+          <img src="/assets/icon/Vector.svg" alt="" />
+        </div>
+      </div>
       <div>
         <ion-card class="box">
           <ion-card-header>
@@ -26,15 +22,15 @@
 
           <ion-card-content>
             <div class="tanggal">
-              <img src="assets/icon/tanggal.svg" alt="">
+              <img src="assets/icon/tanggal.svg" alt="" />
               <p>01-09-2022</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/hari.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/hari.svg" alt="" />
               <p>90 Hari</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/ikan.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/ikan.svg" alt="" />
               <p>200 Ekor</p>
             </div>
           </ion-card-content>
@@ -55,15 +51,15 @@
 
           <ion-card-content>
             <div class="tanggal">
-              <img src="assets/icon/tanggal.svg" alt="">
+              <img src="assets/icon/tanggal.svg" alt="" />
               <p>01-09-2022</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/hari.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/hari.svg" alt="" />
               <p>90 Hari</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/ikan.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/ikan.svg" alt="" />
               <p>200 Ekor</p>
             </div>
           </ion-card-content>
@@ -84,15 +80,15 @@
 
           <ion-card-content>
             <div class="tanggal">
-              <img src="assets/icon/tanggal.svg" alt="">
+              <img src="assets/icon/tanggal.svg" alt="" />
               <p>01-09-2022</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/hari.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/hari.svg" alt="" />
               <p>90 Hari</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/ikan.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/ikan.svg" alt="" />
               <p>200 Ekor</p>
             </div>
           </ion-card-content>
@@ -113,15 +109,15 @@
 
           <ion-card-content>
             <div class="tanggal">
-              <img src="assets/icon/tanggal.svg" alt="">
+              <img src="assets/icon/tanggal.svg" alt="" />
               <p>01-09-2022</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/hari.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/hari.svg" alt="" />
               <p>90 Hari</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/ikan.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/ikan.svg" alt="" />
               <p>200 Ekor</p>
             </div>
           </ion-card-content>
@@ -142,15 +138,15 @@
 
           <ion-card-content>
             <div class="tanggal">
-              <img src="assets/icon/tanggal.svg" alt="">
+              <img src="assets/icon/tanggal.svg" alt="" />
               <p>01-09-2022</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/hari.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/hari.svg" alt="" />
               <p>90 Hari</p>
             </div>
-            <div class="hari" style="display: flex; gap: 5px;">
-              <img src="assets/icon/ikan.svg" alt="">
+            <div class="hari" style="display: flex; gap: 5px">
+              <img src="assets/icon/ikan.svg" alt="" />
               <p>200 Ekor</p>
             </div>
           </ion-card-content>
@@ -161,36 +157,25 @@
 </template>
 
 <script lang="ts">
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar,
-  IonIcon,
-} from "@ionic/vue";
+import { IonContent, IonPage } from "@ionic/vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "PageSecond",
   components: {
     IonContent,
-    IonHeader,
     IonPage,
-    IonTitle,
-    IonToolbar,
   },
 });
 </script>
 
 <style scoped>
-
-*{
+* {
   font-family: Poppins;
   font-weight: bold;
 }
 
-@font-face{
+@font-face {
   font-family: "Poppins";
   src: url(../../public/assets/font/Poppins-Regular.ttf);
 }
@@ -261,10 +246,23 @@ hr {
   margin-top: -10px;
 }
 
-.tanggal{
+.tanggal {
   display: flex;
   gap: 5px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 12px;
+  font-weight: bold;
+}
+.navbar img {
+  width: 30px;
+}
+
+
 .tombol {
   margin-top: 10px;
   margin-left: 180px;

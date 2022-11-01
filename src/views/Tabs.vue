@@ -4,10 +4,10 @@
         <ion-router-outlet></ion-router-outlet>
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="HomePage" href="/tabs/home">
-            <ion-icon :icon="triangle" />
+            <ion-icon src="assets/icon/Home.svg" />
           </ion-tab-button>
           <ion-tab-button tab="PageSecond" href="/tabs/Page2">
-            <ion-icon :icon="ellipse" />
+            <ion-icon src="assets/icon/kolam 1.svg" />
           </ion-tab-button>
           
         </ion-tab-bar>
@@ -18,15 +18,12 @@
   <script lang="ts">
   import { defineComponent } from 'vue';
   import { IonTabBar, IonTabButton, IonTabs, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-  import { ellipse, triangle } from 'ionicons/icons';
   
   export default defineComponent({
     name: 'TabsPage',
     components: {IonTabs, IonTabBar, IonTabButton, IonIcon, IonPage, IonRouterOutlet },
     setup() {
       return {
-        ellipse, 
-        triangle,
       }
     }
   });
